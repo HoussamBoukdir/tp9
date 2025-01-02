@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>contact</legend>
+            <label for="nom">nom*</label>
+            <input type="text" id="nom" name="nom" required>
+            <br>
+            <label for="portable">portable</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="06xxxxxxxx" pattern="06[0-9]{8}">
+            <br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>information personnelles</legend>
+            <label for="age">age</label>
+            <input type="number" id="age" name="age" placeholder="xx" min="1" max="150" step="1">
+            <br>
+            <label for="ville">ville</label>
+            <select name="ville" id="ville">
+            <option value="ville">rabat</option>
+            <option value="ville">casa</option>
+            <option value="ville">taza</option>
+            </select>
+            <br>
+            pourquoi vous voulez impliquer dans l organization
+            <br>
+            <textarea name="text" id="text"></textarea>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>choisissez vos domains favoris</legend>
+            <input type="checkbox" id="informatique" name="informatique">
+            <label for="informatique"> informatique</label>
+            <input type="checkbox" id="science" name="science">
+            <label for="science">science</label>
+            <input type="checkbox" id="culture" name="culture">
+            <label for="culture">culture</label>
+            <br><br>
+            <input type="submit" value="send">
+            <input type="reset">
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
